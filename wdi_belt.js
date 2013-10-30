@@ -11,6 +11,12 @@ var WDIBelt = WDIBelt || {
     }
   },
 
+  times: function(num, fn) {
+    for (var i=0; i<num; i++) {
+      fn();
+    }
+  },
+
   map: function(array, fn) {
     debugger;
     var new_array = [];
